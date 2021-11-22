@@ -17,6 +17,7 @@ struct MockEndPoint: EndPointProtocol {
     }
 }
 
+
 class MockSession: URLSession {
     var mockData: Data?
     var mockResponse: URLResponse?
