@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4824C7586B46156F3198F984 /* Pods_HelloFreshDevTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8B100C014A1BC1220B18E3 /* Pods_HelloFreshDevTestTests.framework */; };
+		CF4FFE80ADE726F5002DEB7F /* Pods_HelloFreshDevTest_HelloFreshDevTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E05B90F5C4A059EC43854C3 /* Pods_HelloFreshDevTest_HelloFreshDevTestUITests.framework */; };
+		D57944AF2740461F00281E75 /* RecipesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57944AE2740461F00281E75 /* RecipesDataSource.swift */; };
+		D57944B12740475A00281E75 /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57944B02740475A00281E75 /* TableView+Extension.swift */; };
+		D57944B42740549900281E75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57944B32740549900281E75 /* SceneDelegate.swift */; };
+		D57944B7274055C900281E75 /* RecipesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57944B5274055C900281E75 /* RecipesCell.swift */; };
+		D57944B8274055C900281E75 /* RecipesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57944B6274055C900281E75 /* RecipesCell.xib */; };
+		D5B2D82F273EEA94001014F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D82E273EEA94001014F4 /* AppDelegate.swift */; };
+		D5B2D836273EEA94001014F4 /* Recipes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B2D834273EEA94001014F4 /* Recipes.storyboard */; };
+		D5B2D838273EEA95001014F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B2D837273EEA95001014F4 /* Assets.xcassets */; };
+		D5B2D83B273EEA95001014F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B2D839273EEA95001014F4 /* LaunchScreen.storyboard */; };
+		D5B2D850273EEA95001014F4 /* HelloFreshDevTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D84F273EEA95001014F4 /* HelloFreshDevTestUITests.swift */; };
+		D5B2D852273EEA95001014F4 /* HelloFreshDevTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D851273EEA95001014F4 /* HelloFreshDevTestUITestsLaunchTests.swift */; };
+		D5B2D864273EEC99001014F4 /* RecipesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D85E273EEC99001014F4 /* RecipesListPresenter.swift */; };
+		D5B2D868273EEC99001014F4 /* RecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D862273EEC99001014F4 /* RecipesListViewController.swift */; };
+		D5B2D869273EEC99001014F4 /* RecipesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D863273EEC99001014F4 /* RecipesListInteractor.swift */; };
+		D5B2D86D273EEF86001014F4 /* RecipesListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D86C273EEF86001014F4 /* RecipesListConfigurator.swift */; };
+		D5B2D879273EF199001014F4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D86F273EF199001014F4 /* NetworkClient.swift */; };
+		D5B2D87C273EF19A001014F4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D873273EF199001014F4 /* NetworkError.swift */; };
+		D5B2D87E273EF19A001014F4 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D877273EF199001014F4 /* RecipesModel.swift */; };
+		D5B2D87F273EF19A001014F4 /* RecipesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D878273EF199001014F4 /* RecipesEndPoint.swift */; };
+		D5B2D881273EF277001014F4 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2D880273EF277001014F4 /* NetworkClientProtocol.swift */; };
+		D5E68E1E2741779D008DE732 /* RecipesListUIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E68E1D2741779D008DE732 /* RecipesListUIModels.swift */; };
+		D5E68E2027418265008DE732 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E68E1F27418265008DE732 /* NetworkLayerTests.swift */; };
+		D5E68E22274182F0008DE732 /* recipesStubs.json in Resources */ = {isa = PBXBuildFile; fileRef = D5E68E21274182F0008DE732 /* recipesStubs.json */; };
+		D5E68E2627418781008DE732 /* Bundle+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E68E2527418781008DE732 /* Bundle+Test.swift */; };
+		D5E68E2827418F1B008DE732 /* RecipesSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E68E2727418F1B008DE732 /* RecipesSceneTests.swift */; };
+		D5E68E2A2741C33A008DE732 /* RecipesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E68E292741C33A008DE732 /* RecipesInteractorTests.swift */; };
+		D5E68E2C2741C34B008DE732 /* RecipesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E68E2B2741C34B008DE732 /* RecipesPresenterTests.swift */; };
+		D5E68E2E2741C366008DE732 /* Mocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E68E2D2741C366008DE732 /* Mocking.swift */; };
+		DF70DBDFB826F064B4EB5E87 /* Pods_HelloFreshDevTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A0F02461323435A5CD1501 /* Pods_HelloFreshDevTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5B2D842273EEA95001014F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B2D823273EEA93001014F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5B2D82A273EEA93001014F4;
+			remoteInfo = HelloFreshDevTest;
+		};
+		D5B2D84C273EEA95001014F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B2D823273EEA93001014F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5B2D82A273EEA93001014F4;
+			remoteInfo = HelloFreshDevTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C3BFFF9002A783326E126CE /* Pods-HelloFreshDevTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshDevTest.debug.xcconfig"; path = "Target Support Files/Pods-HelloFreshDevTest/Pods-HelloFreshDevTest.debug.xcconfig"; sourceTree = "<group>"; };
+		1A8B100C014A1BC1220B18E3 /* Pods_HelloFreshDevTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFreshDevTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD14CC40A583124EED7B543 /* Pods-HelloFreshDevTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshDevTestTests.debug.xcconfig"; path = "Target Support Files/Pods-HelloFreshDevTestTests/Pods-HelloFreshDevTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50ABE41A10885A689096C7D1 /* Pods-HelloFreshDevTest-HelloFreshDevTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshDevTest-HelloFreshDevTestUITests.release.xcconfig"; path = "Target Support Files/Pods-HelloFreshDevTest-HelloFreshDevTestUITests/Pods-HelloFreshDevTest-HelloFreshDevTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		63F47A4B985C56088C807F01 /* Pods-HelloFreshDevTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshDevTest.release.xcconfig"; path = "Target Support Files/Pods-HelloFreshDevTest/Pods-HelloFreshDevTest.release.xcconfig"; sourceTree = "<group>"; };
+		8179A4586B3C0DE53BE51DF5 /* Pods-HelloFreshDevTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshDevTestTests.release.xcconfig"; path = "Target Support Files/Pods-HelloFreshDevTestTests/Pods-HelloFreshDevTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E05B90F5C4A059EC43854C3 /* Pods_HelloFreshDevTest_HelloFreshDevTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFreshDevTest_HelloFreshDevTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D57944AE2740461F00281E75 /* RecipesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDataSource.swift; sourceTree = "<group>"; };
+		D57944B02740475A00281E75 /* TableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
+		D57944B32740549900281E75 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D57944B5274055C900281E75 /* RecipesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesCell.swift; sourceTree = "<group>"; };
+		D57944B6274055C900281E75 /* RecipesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesCell.xib; sourceTree = "<group>"; };
+		D5B2D82B273EEA93001014F4 /* HelloFreshDevTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFreshDevTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B2D82E273EEA94001014F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5B2D835273EEA94001014F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Recipes.storyboard; sourceTree = "<group>"; };
+		D5B2D837273EEA95001014F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5B2D83A273EEA95001014F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5B2D83C273EEA95001014F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5B2D841273EEA95001014F4 /* HelloFreshDevTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloFreshDevTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B2D84B273EEA95001014F4 /* HelloFreshDevTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloFreshDevTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B2D84F273EEA95001014F4 /* HelloFreshDevTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloFreshDevTestUITests.swift; sourceTree = "<group>"; };
+		D5B2D851273EEA95001014F4 /* HelloFreshDevTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloFreshDevTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5B2D85E273EEC99001014F4 /* RecipesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListPresenter.swift; sourceTree = "<group>"; };
+		D5B2D862273EEC99001014F4 /* RecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewController.swift; sourceTree = "<group>"; };
+		D5B2D863273EEC99001014F4 /* RecipesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListInteractor.swift; sourceTree = "<group>"; };
+		D5B2D86C273EEF86001014F4 /* RecipesListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesListConfigurator.swift; sourceTree = "<group>"; };
+		D5B2D86F273EF199001014F4 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		D5B2D873273EF199001014F4 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D5B2D877273EF199001014F4 /* RecipesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
+		D5B2D878273EF199001014F4 /* RecipesEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesEndPoint.swift; sourceTree = "<group>"; };
+		D5B2D880273EF277001014F4 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		D5E68E1D2741779D008DE732 /* RecipesListUIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListUIModels.swift; sourceTree = "<group>"; };
+		D5E68E1F27418265008DE732 /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
+		D5E68E21274182F0008DE732 /* recipesStubs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipesStubs.json; sourceTree = "<group>"; };
+		D5E68E2527418781008DE732 /* Bundle+Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Test.swift"; sourceTree = "<group>"; };
+		D5E68E2727418F1B008DE732 /* RecipesSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSceneTests.swift; sourceTree = "<group>"; };
+		D5E68E292741C33A008DE732 /* RecipesInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesInteractorTests.swift; sourceTree = "<group>"; };
+		D5E68E2B2741C34B008DE732 /* RecipesPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesPresenterTests.swift; sourceTree = "<group>"; };
+		D5E68E2D2741C366008DE732 /* Mocking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocking.swift; sourceTree = "<group>"; };
+		D85DF359443AB70CBC23004B /* Pods-HelloFreshDevTest-HelloFreshDevTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFreshDevTest-HelloFreshDevTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-HelloFreshDevTest-HelloFreshDevTestUITests/Pods-HelloFreshDevTest-HelloFreshDevTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9A0F02461323435A5CD1501 /* Pods_HelloFreshDevTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFreshDevTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5B2D828273EEA93001014F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF70DBDFB826F064B4EB5E87 /* Pods_HelloFreshDevTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B2D83E273EEA95001014F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4824C7586B46156F3198F984 /* Pods_HelloFreshDevTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B2D848273EEA95001014F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4FFE80ADE726F5002DEB7F /* Pods_HelloFreshDevTest_HelloFreshDevTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F73641AD512458A16333FFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C3BFFF9002A783326E126CE /* Pods-HelloFreshDevTest.debug.xcconfig */,
+				63F47A4B985C56088C807F01 /* Pods-HelloFreshDevTest.release.xcconfig */,
+				D85DF359443AB70CBC23004B /* Pods-HelloFreshDevTest-HelloFreshDevTestUITests.debug.xcconfig */,
+				50ABE41A10885A689096C7D1 /* Pods-HelloFreshDevTest-HelloFreshDevTestUITests.release.xcconfig */,
+				1AD14CC40A583124EED7B543 /* Pods-HelloFreshDevTestTests.debug.xcconfig */,
+				8179A4586B3C0DE53BE51DF5 /* Pods-HelloFreshDevTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		28CEF734D436B539E44D8AC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9A0F02461323435A5CD1501 /* Pods_HelloFreshDevTest.framework */,
+				8E05B90F5C4A059EC43854C3 /* Pods_HelloFreshDevTest_HelloFreshDevTestUITests.framework */,
+				1A8B100C014A1BC1220B18E3 /* Pods_HelloFreshDevTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D57944A927402FF500281E75 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D57944B5274055C900281E75 /* RecipesCell.swift */,
+				D57944B6274055C900281E75 /* RecipesCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D57944B22740476000281E75 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D57944B02740475A00281E75 /* TableView+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D5B2D822273EEA93001014F4 = {
+			isa = PBXGroup;
+			children = (
+				D5B2D82D273EEA93001014F4 /* HelloFreshDevTest */,
+				D5B2D844273EEA95001014F4 /* HelloFreshDevTestTests */,
+				D5B2D84E273EEA95001014F4 /* HelloFreshDevTestUITests */,
+				D5B2D82C273EEA93001014F4 /* Products */,
+				0F73641AD512458A16333FFB /* Pods */,
+				28CEF734D436B539E44D8AC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5B2D82C273EEA93001014F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2D82B273EEA93001014F4 /* HelloFreshDevTest.app */,
+				D5B2D841273EEA95001014F4 /* HelloFreshDevTestTests.xctest */,
+				D5B2D84B273EEA95001014F4 /* HelloFreshDevTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5B2D82D273EEA93001014F4 /* HelloFreshDevTest */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2D86E273EF199001014F4 /* Networking */,
+				D5B2D86A273EECA4001014F4 /* RecipesScene */,
+				D57944B22740476000281E75 /* Utils */,
+				D5B2D82E273EEA94001014F4 /* AppDelegate.swift */,
+				D57944B32740549900281E75 /* SceneDelegate.swift */,
+				D5B2D837273EEA95001014F4 /* Assets.xcassets */,
+				D5B2D839273EEA95001014F4 /* LaunchScreen.storyboard */,
+				D5B2D83C273EEA95001014F4 /* Info.plist */,
+			);
+			path = HelloFreshDevTest;
+			sourceTree = "<group>";
+		};
+		D5B2D844273EEA95001014F4 /* HelloFreshDevTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5E68E2527418781008DE732 /* Bundle+Test.swift */,
+				D5E68E1F27418265008DE732 /* NetworkLayerTests.swift */,
+				D5E68E292741C33A008DE732 /* RecipesInteractorTests.swift */,
+				D5E68E2B2741C34B008DE732 /* RecipesPresenterTests.swift */,
+				D5E68E2727418F1B008DE732 /* RecipesSceneTests.swift */,
+				D5E68E2D2741C366008DE732 /* Mocking.swift */,
+				D5E68E21274182F0008DE732 /* recipesStubs.json */,
+			);
+			path = HelloFreshDevTestTests;
+			sourceTree = "<group>";
+		};
+		D5B2D84E273EEA95001014F4 /* HelloFreshDevTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2D84F273EEA95001014F4 /* HelloFreshDevTestUITests.swift */,
+				D5B2D851273EEA95001014F4 /* HelloFreshDevTestUITestsLaunchTests.swift */,
+			);
+			path = HelloFreshDevTestUITests;
+			sourceTree = "<group>";
+		};
+		D5B2D86A273EECA4001014F4 /* RecipesScene */ = {
+			isa = PBXGroup;
+			children = (
+				D57944A927402FF500281E75 /* Cells */,
+				D5B2D85E273EEC99001014F4 /* RecipesListPresenter.swift */,
+				D5B2D862273EEC99001014F4 /* RecipesListViewController.swift */,
+				D5B2D86C273EEF86001014F4 /* RecipesListConfigurator.swift */,
+				D5E68E1D2741779D008DE732 /* RecipesListUIModels.swift */,
+				D5B2D863273EEC99001014F4 /* RecipesListInteractor.swift */,
+				D57944AE2740461F00281E75 /* RecipesDataSource.swift */,
+				D5B2D86B273EEDC5001014F4 /* StoryBoard */,
+			);
+			path = RecipesScene;
+			sourceTree = "<group>";
+		};
+		D5B2D86B273EEDC5001014F4 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2D834273EEA94001014F4 /* Recipes.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		D5B2D86E273EF199001014F4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2D880273EF277001014F4 /* NetworkClientProtocol.swift */,
+				D5B2D86F273EF199001014F4 /* NetworkClient.swift */,
+				D5B2D878273EF199001014F4 /* RecipesEndPoint.swift */,
+				D5B2D876273EF199001014F4 /* response model */,
+				D5B2D870273EF199001014F4 /* NetworkHelpers */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D5B2D870273EF199001014F4 /* NetworkHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2D873273EF199001014F4 /* NetworkError.swift */,
+			);
+			path = NetworkHelpers;
+			sourceTree = "<group>";
+		};
+		D5B2D876273EF199001014F4 /* response model */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2D877273EF199001014F4 /* RecipesModel.swift */,
+			);
+			path = "response model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5B2D82A273EEA93001014F4 /* HelloFreshDevTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B2D855273EEA95001014F4 /* Build configuration list for PBXNativeTarget "HelloFreshDevTest" */;
+			buildPhases = (
+				EB674C4D61FB0D6B0A8A8ED4 /* [CP] Check Pods Manifest.lock */,
+				D5B2D827273EEA93001014F4 /* Sources */,
+				D5B2D828273EEA93001014F4 /* Frameworks */,
+				D5B2D829273EEA93001014F4 /* Resources */,
+				9F4D9E4ABAF33DC0F626C16D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloFreshDevTest;
+			productName = HelloFreshDevTest;
+			productReference = D5B2D82B273EEA93001014F4 /* HelloFreshDevTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5B2D840273EEA95001014F4 /* HelloFreshDevTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B2D858273EEA95001014F4 /* Build configuration list for PBXNativeTarget "HelloFreshDevTestTests" */;
+			buildPhases = (
+				AEEBC1C285298419375052FE /* [CP] Check Pods Manifest.lock */,
+				D5B2D83D273EEA95001014F4 /* Sources */,
+				D5B2D83E273EEA95001014F4 /* Frameworks */,
+				D5B2D83F273EEA95001014F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5B2D843273EEA95001014F4 /* PBXTargetDependency */,
+			);
+			name = HelloFreshDevTestTests;
+			productName = HelloFreshDevTestTests;
+			productReference = D5B2D841273EEA95001014F4 /* HelloFreshDevTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5B2D84A273EEA95001014F4 /* HelloFreshDevTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B2D85B273EEA95001014F4 /* Build configuration list for PBXNativeTarget "HelloFreshDevTestUITests" */;
+			buildPhases = (
+				7EEE9D86ECD58A066F72A738 /* [CP] Check Pods Manifest.lock */,
+				D5B2D847273EEA95001014F4 /* Sources */,
+				D5B2D848273EEA95001014F4 /* Frameworks */,
+				D5B2D849273EEA95001014F4 /* Resources */,
+				5C03E010D405A530893689BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5B2D84D273EEA95001014F4 /* PBXTargetDependency */,
+			);
+			name = HelloFreshDevTestUITests;
+			productName = HelloFreshDevTestUITests;
+			productReference = D5B2D84B273EEA95001014F4 /* HelloFreshDevTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5B2D823273EEA93001014F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					D5B2D82A273EEA93001014F4 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					D5B2D840273EEA95001014F4 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = D5B2D82A273EEA93001014F4;
+					};
+					D5B2D84A273EEA95001014F4 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = D5B2D82A273EEA93001014F4;
+					};
+				};
+			};
+			buildConfigurationList = D5B2D826273EEA93001014F4 /* Build configuration list for PBXProject "HelloFreshDevTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5B2D822273EEA93001014F4;
+			productRefGroup = D5B2D82C273EEA93001014F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5B2D82A273EEA93001014F4 /* HelloFreshDevTest */,
+				D5B2D840273EEA95001014F4 /* HelloFreshDevTestTests */,
+				D5B2D84A273EEA95001014F4 /* HelloFreshDevTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5B2D829273EEA93001014F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B2D83B273EEA95001014F4 /* LaunchScreen.storyboard in Resources */,
+				D5B2D838273EEA95001014F4 /* Assets.xcassets in Resources */,
+				D57944B8274055C900281E75 /* RecipesCell.xib in Resources */,
+				D5B2D836273EEA94001014F4 /* Recipes.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B2D83F273EEA95001014F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E68E22274182F0008DE732 /* recipesStubs.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B2D849273EEA95001014F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C03E010D405A530893689BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloFreshDevTest-HelloFreshDevTestUITests/Pods-HelloFreshDevTest-HelloFreshDevTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloFreshDevTest-HelloFreshDevTestUITests/Pods-HelloFreshDevTest-HelloFreshDevTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloFreshDevTest-HelloFreshDevTestUITests/Pods-HelloFreshDevTest-HelloFreshDevTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EEE9D86ECD58A066F72A738 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloFreshDevTest-HelloFreshDevTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F4D9E4ABAF33DC0F626C16D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloFreshDevTest/Pods-HelloFreshDevTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloFreshDevTest/Pods-HelloFreshDevTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloFreshDevTest/Pods-HelloFreshDevTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEEBC1C285298419375052FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloFreshDevTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB674C4D61FB0D6B0A8A8ED4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloFreshDevTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5B2D827273EEA93001014F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B2D868273EEC99001014F4 /* RecipesListViewController.swift in Sources */,
+				D57944B42740549900281E75 /* SceneDelegate.swift in Sources */,
+				D5B2D879273EF199001014F4 /* NetworkClient.swift in Sources */,
+				D5B2D864273EEC99001014F4 /* RecipesListPresenter.swift in Sources */,
+				D5E68E1E2741779D008DE732 /* RecipesListUIModels.swift in Sources */,
+				D57944B12740475A00281E75 /* TableView+Extension.swift in Sources */,
+				D5B2D869273EEC99001014F4 /* RecipesListInteractor.swift in Sources */,
+				D5B2D87F273EF19A001014F4 /* RecipesEndPoint.swift in Sources */,
+				D5B2D881273EF277001014F4 /* NetworkClientProtocol.swift in Sources */,
+				D5B2D87E273EF19A001014F4 /* RecipesModel.swift in Sources */,
+				D5B2D82F273EEA94001014F4 /* AppDelegate.swift in Sources */,
+				D5B2D86D273EEF86001014F4 /* RecipesListConfigurator.swift in Sources */,
+				D57944AF2740461F00281E75 /* RecipesDataSource.swift in Sources */,
+				D5B2D87C273EF19A001014F4 /* NetworkError.swift in Sources */,
+				D57944B7274055C900281E75 /* RecipesCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B2D83D273EEA95001014F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E68E2A2741C33A008DE732 /* RecipesInteractorTests.swift in Sources */,
+				D5E68E2027418265008DE732 /* NetworkLayerTests.swift in Sources */,
+				D5E68E2827418F1B008DE732 /* RecipesSceneTests.swift in Sources */,
+				D5E68E2C2741C34B008DE732 /* RecipesPresenterTests.swift in Sources */,
+				D5E68E2E2741C366008DE732 /* Mocking.swift in Sources */,
+				D5E68E2627418781008DE732 /* Bundle+Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B2D847273EEA95001014F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B2D852273EEA95001014F4 /* HelloFreshDevTestUITestsLaunchTests.swift in Sources */,
+				D5B2D850273EEA95001014F4 /* HelloFreshDevTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5B2D843273EEA95001014F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5B2D82A273EEA93001014F4 /* HelloFreshDevTest */;
+			targetProxy = D5B2D842273EEA95001014F4 /* PBXContainerItemProxy */;
+		};
+		D5B2D84D273EEA95001014F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5B2D82A273EEA93001014F4 /* HelloFreshDevTest */;
+			targetProxy = D5B2D84C273EEA95001014F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5B2D834273EEA94001014F4 /* Recipes.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B2D835273EEA94001014F4 /* Base */,
+			);
+			name = Recipes.storyboard;
+			sourceTree = "<group>";
+		};
+		D5B2D839273EEA95001014F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B2D83A273EEA95001014F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5B2D853273EEA95001014F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5B2D854273EEA95001014F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5B2D856273EEA95001014F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C3BFFF9002A783326E126CE /* Pods-HelloFreshDevTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X78LL62Y2P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelloFreshDevTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Recipes;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sulta.dev.HelloFreshDevTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5B2D857273EEA95001014F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63F47A4B985C56088C807F01 /* Pods-HelloFreshDevTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X78LL62Y2P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelloFreshDevTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Recipes;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sulta.dev.HelloFreshDevTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5B2D859273EEA95001014F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD14CC40A583124EED7B543 /* Pods-HelloFreshDevTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X78LL62Y2P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sulta.dev.HelloFreshDevTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloFreshDevTest.app/HelloFreshDevTest";
+			};
+			name = Debug;
+		};
+		D5B2D85A273EEA95001014F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8179A4586B3C0DE53BE51DF5 /* Pods-HelloFreshDevTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X78LL62Y2P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sulta.dev.HelloFreshDevTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloFreshDevTest.app/HelloFreshDevTest";
+			};
+			name = Release;
+		};
+		D5B2D85C273EEA95001014F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85DF359443AB70CBC23004B /* Pods-HelloFreshDevTest-HelloFreshDevTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X78LL62Y2P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sulta.dev.HelloFreshDevTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloFreshDevTest;
+			};
+			name = Debug;
+		};
+		D5B2D85D273EEA95001014F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50ABE41A10885A689096C7D1 /* Pods-HelloFreshDevTest-HelloFreshDevTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X78LL62Y2P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sulta.dev.HelloFreshDevTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloFreshDevTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5B2D826273EEA93001014F4 /* Build configuration list for PBXProject "HelloFreshDevTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B2D853273EEA95001014F4 /* Debug */,
+				D5B2D854273EEA95001014F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B2D855273EEA95001014F4 /* Build configuration list for PBXNativeTarget "HelloFreshDevTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B2D856273EEA95001014F4 /* Debug */,
+				D5B2D857273EEA95001014F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B2D858273EEA95001014F4 /* Build configuration list for PBXNativeTarget "HelloFreshDevTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B2D859273EEA95001014F4 /* Debug */,
+				D5B2D85A273EEA95001014F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B2D85B273EEA95001014F4 /* Build configuration list for PBXNativeTarget "HelloFreshDevTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B2D85C273EEA95001014F4 /* Debug */,
+				D5B2D85D273EEA95001014F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5B2D823273EEA93001014F4 /* Project object */;
+}
